@@ -1,0 +1,6 @@
+set(LIB_NAME lib_uart_common)
+set(LIB_VERSION 0.0.0)
+set(LIB_INCLUDES api)
+set(LIB_DEPENDENT_MODULES "")
+
+XMOS_REGISTER_MODULE()

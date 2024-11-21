@@ -57,17 +57,6 @@ struct UART_Common {
         return std::string(1, static_cast<char>(msg_type)) + "," + content;
     }
 
-    static char SplitMessage(const std::string& msg_string, std::string& msg_payload) {
-        char c;
-        size_t commaPos = msg_string.find(',');
-        if (commaPos == std::string::npos || commaPos == 0 || commaPos == msg_string.size() - 1) {
-            msg_payload.clear();
-            return '\0';
-        }
-        c = msg_string[0];
-        msg_payload = msg_string.substr(commaPos + 1);
-        return c;
-    }
 
     static std::string FormatAppState(const ts_app_state& app_state) {
         // Preallocate the vector with a fixed size for all fields + checksum

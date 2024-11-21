@@ -55,6 +55,7 @@ typedef enum {
 
 
 typedef enum {
+    app_id_error,
     app_id_fmsynth,
     app_id_euclidean,
     app_id_multifx,
@@ -79,10 +80,7 @@ typedef struct {
 
 } ts_app_state;
 
-extern ts_app_state gAppState;
-extern const size_t kApp_MaxModels;
-extern const size_t kApp_MaxDatasets;
-extern const size_t kN_nn_params;
+extern ts_app_state GAppState;
 
 
 #if defined(__cplusplus) || defined(__XC__)

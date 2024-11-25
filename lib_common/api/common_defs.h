@@ -37,6 +37,7 @@ typedef enum {
 
 typedef enum {
     slider_randomSpeed,
+    slider_nIterations,
     slider_nSliders
 } te_slider_idx;
 

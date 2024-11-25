@@ -8,15 +8,15 @@ extern "C" {
 #include <stddef.h>
 #include <stdint.h>
 
-/**
- * @brief Inserts
- *
- */
 typedef struct {
     float potX;
     float potY;
     float potRotate;
 } ts_joystick_read;
+
+/**
+ * UI elements
+ */
 
 typedef enum {
     joystick_potX,
@@ -32,6 +32,9 @@ typedef enum {
     button_reset,
     toggle_discretise,
     toggle_complex,
+    toggle_explmode,
+    toggle_dataset,
+    toggle_model,
     button_nButtons
 } te_button_idx;
 
@@ -40,6 +43,10 @@ typedef enum {
     slider_nIterations,
     slider_nSliders
 } te_slider_idx;
+
+/**
+ * Behavioural elements/flags
+ */
 
 typedef enum {
     mode_inference,
@@ -67,6 +74,13 @@ typedef enum {
     app_id_machinelisten,
     app_nIDs
 } te_app_id;
+
+#define kMaxDatasets    4
+#define kMaxModels      4
+
+/**
+ * State structure
+ */
 
 
 typedef struct {

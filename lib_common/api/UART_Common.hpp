@@ -19,7 +19,8 @@ struct UART_Common {
         pulse_period='p',
         slider='s',
         state_request='q',
-        state_dump='d'
+        state_dump='d',
+        ui_info='u'
     };
 
     static constexpr float kFloatToIntConvScaling = 65536;

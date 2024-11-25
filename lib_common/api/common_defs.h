@@ -53,9 +53,13 @@ typedef enum {
     expl_nModes
 } te_expl_mode;
 
+typedef enum {
+    ui_last_error,
+    ui_nElements,
+} te_ui_info;
 
 typedef enum {
-    app_id_error,
+    app_id_unknown,
     app_id_fmsynth,
     app_id_euclidean,
     app_id_multifx,

@@ -26,15 +26,16 @@ typedef enum {
 } te_joystick_pot;
 
 typedef enum {
-    toggle_training,
-    button_randomise,
-    toggle_savedata,
-    button_reset,
-    toggle_discretise,
-    toggle_complex,
-    toggle_explmode,
-    toggle_dataset,
-    toggle_model,
+    toggle_training,   // 0
+    button_randomise,  // 1
+    toggle_savedata,   // 2
+    button_cleardata,  // 3
+    button_clearmodel, // 4
+    toggle_discretise, // 5
+    toggle_complex,    // 6
+    toggle_explmode,   // 7
+    toggle_dataset,    // 8
+    toggle_model,      // 9
     button_nButtons
 } te_button_idx;
 

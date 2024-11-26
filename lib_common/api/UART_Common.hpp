@@ -20,7 +20,8 @@ struct UART_Common {
         slider='s',
         state_request='q',
         state_dump='d',
-        ui_info='u'
+        ui_info='u',
+        midi_note='n',
     };
 
     static constexpr float kFloatToIntConvScaling = 65536;

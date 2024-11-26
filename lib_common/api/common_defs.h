@@ -76,6 +76,12 @@ typedef enum {
     app_nIDs
 } te_app_id;
 
+typedef enum {
+    midi_noteon,
+    midi_noteoff,
+    midi_nCommands
+} te_midi_command;
+
 #define kMaxDatasets    4
 #define kMaxModels      4
 

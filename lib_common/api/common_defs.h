@@ -14,6 +14,11 @@ typedef struct {
     float potRotate;
 } ts_joystick_read;
 
+typedef struct {
+    size_t note_number;
+    float velocity;
+} ts_midi_note;
+
 /**
  * UI elements
  */
@@ -105,8 +110,6 @@ typedef struct {
     te_expl_mode current_expl_mode;
 
 } ts_app_state;
-
-extern ts_app_state GAppState;
 
 
 #if defined(__cplusplus) || defined(__XC__)
